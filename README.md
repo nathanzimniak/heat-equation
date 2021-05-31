@@ -13,7 +13,7 @@ Un programme codé en Python pour résoudre l'équation de la chaleur à deux di
 
 ### Théorie
 
-test
+$\mu = 3$
 
 ### Bibliographie
 
