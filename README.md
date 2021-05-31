@@ -7,8 +7,8 @@ Un programme codé en Python pour résoudre l'équation de la chaleur à deux di
 ### Aperçu
 
 <p float="left">
-  <img src="resources//equation-chaleur.gif" />
-  <img src="resources//equation-chaleur.png" />
+  <img src="resources//equation-chaleur-animation.gif" />
+  <img src="resources//equation-chaleur-image.png" />
 </p>
 
 ### Théorie
