@@ -6,7 +6,10 @@ Un programme codé en Python pour résoudre l'équation de la chaleur à deux di
 
 ### Aperçu
 
-*En construction*
+<p float="left">
+  <img src="resources//equation-chaleur.gif" />
+  <img src="resources//equation-chaleur.png" />
+</p>
 
 ### Théorie
 
