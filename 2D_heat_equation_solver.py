@@ -107,17 +107,18 @@ T = finite_difference_method(T0)
 
 
 
-###Plot (Image 3D)
-##    
+#Plot (Image 3D)
+  
 ##plt.style.use('dark_background')
 ##fig = plt.figure()
 ##ax = plt.axes(projection = '3d')
 ##X, Y = np.meshgrid(np.arange(0, Lx), np.arange(0, Ly))
 ##imageNbi = Nbi-1
+##ax.zaxis.set_rotate_label(False)
 ##surf = ax.plot_surface(X, Y, T[imageNbi, :, :], cmap=plt.cm.inferno)
 ##ax.set_xlabel("x")
 ##ax.set_ylabel("y")
-##ax.set_zlabel("T (K)")
+##ax.set_zlabel("T (K)", rotation=0)
 ##ax.w_xaxis.set_pane_color((0.0, 0.0, 0.0, 0.0))
 ##ax.w_yaxis.set_pane_color((0.0, 0.0, 0.0, 0.0))
 ##ax.w_zaxis.set_pane_color((0.0, 0.0, 0.0, 0.0))
@@ -137,10 +138,11 @@ X, Y = np.meshgrid(np.arange(0, Lx), np.arange(0, Ly))
 def Animate3D(k):
     ax.clear()
     ax.set_zlim3d(0, np.max(T))
+    ax.zaxis.set_rotate_label(False)
     ax.plot_surface(X, Y, T[k, :, :], cmap=plt.cm.inferno)
     ax.set_xlabel("x")
     ax.set_ylabel("y")
-    ax.set_zlabel("T (K)")
+    ax.set_zlabel("T (K)", rotation=0)
     #fig.set_facecolor('black')
     #ax.set_facecolor('black')
     ax.w_xaxis.set_pane_color((0.0, 0.0, 0.0, 0.0))
