@@ -1,6 +1,6 @@
 ## Résolution numérique de l'équation de la chaleur
 
-![](https://img.shields.io/badge/Language-Python-blue.png) ![](https://img.shields.io/badge/Version-Stable-success.png)
+![](https://img.shields.io/badge/Language-Python-blue.png)
 
 Un programme codé en Python pour résoudre l'équation de la chaleur à deux dimensions.
 
@@ -12,9 +12,5 @@ Un programme codé en Python pour résoudre l'équation de la chaleur à deux di
 </p>
 
 ### Théorie
-
-*En construction*
-
-### Bibliographie
 
 *En construction*
