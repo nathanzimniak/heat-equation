@@ -22,11 +22,11 @@ start_time = time.time()
 #Initialisation des constantes
 Lx = 201                #Longueur spatiale
 Ly = 201                #Largeur spatiale
-Nbi = 1001              #Nombre d'itérations temporelles
+Nbi = 100001             #Nombre d'itérations temporelles
 dx = 1                  #Pas spatial suivant x
 dy = 1                  #Pas spatial suivant y
 dt = 1e-2               #Pas temporel
-K = 15                  #Coefficient de diffusion thermique
+K = 1                   #Coefficient de diffusion thermique
 
 
 
@@ -54,7 +54,7 @@ def finite_difference_method(Z):
     '''
     for k in range(0, Nbi-1):
         for i in range(1, Ly-1):
-            for j in range(0, Lx-1):
+            for j in range(1, Lx-1):
                 Z[k + 1, i, j] = Z[k][i][j] + K * dt * ((Z[k][i+1][j] + Z[k][i-1][j] - 2*Z[k][i][j])/dx**2  + (Z[k][i][j+1] + Z[k][i][j-1] - 2*Z[k][i][j])/dy**2)
     return Z
 
@@ -136,6 +136,7 @@ ax = plt.axes(projection = '3d')
 X, Y = np.meshgrid(np.arange(0, Lx), np.arange(0, Ly))
 
 def Animate3D(k):
+    k=k*100
     ax.clear()
     ax.set_zlim3d(0, np.max(T))
     ax.zaxis.set_rotate_label(False)
@@ -150,10 +151,10 @@ def Animate3D(k):
     ax.w_zaxis.set_pane_color((0.0, 0.0, 0.0, 0.0))
     ax.grid(False)
     plt.title(f"Température à t = {k*dt:.2f} s")
-    ax.view_init(azim=k)
+    ax.view_init(azim=k/100)
     return
 
-anim3D = animation.FuncAnimation(fig, Animate3D, frames = int(Nbi), interval = 50, blit = False, repeat = True)
+anim3D = animation.FuncAnimation(fig, Animate3D, frames = int(Nbi/100), interval = 50, blit = False, repeat = True)
 
 ##plt.rcParams['animation.ffmpeg_path'] = 'C:\\ffmpeg\\bin\\ffmpeg.exe'
 ##Writer = animation.writers['ffmpeg']
