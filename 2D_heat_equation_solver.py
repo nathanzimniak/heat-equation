@@ -20,12 +20,12 @@ start_time = time.time()
 
 
 #Initialisation des constantes
-Lx = 81                 #Longueur spatiale
-Ly = 41                 #Largeur spatiale
-Nbi = 100               #Nombre d'itérations temporelles
+Lx = 201                #Longueur spatiale
+Ly = 201                #Largeur spatiale
+Nbi = 1001              #Nombre d'itérations temporelles
 dx = 1                  #Pas spatial suivant x
 dy = 1                  #Pas spatial suivant y
-dt = 0.01               #Pas temporel
+dt = 1e-2               #Pas temporel
 K = 15                  #Coefficient de diffusion thermique
 
 
