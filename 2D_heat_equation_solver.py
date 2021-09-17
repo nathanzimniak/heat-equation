@@ -87,6 +87,7 @@ T = finite_difference_method(T0)
 ##fig = plt.figure()
 ##
 ##def animate(k):
+##    k=k*100
 ##    plt.clf()
 ##    plt.pcolormesh(T[k, :, :], cmap = plt.cm.inferno)
 ##    plt.colorbar()
@@ -95,7 +96,7 @@ T = finite_difference_method(T0)
 ##    plt.title(f"Température à t = {k*dt:.2f} s")
 ##    return
 ##
-##anim = animation.FuncAnimation(fig, animate, frames = int(Nbi), interval = 50, repeat = True)
+##anim = animation.FuncAnimation(fig, animate, frames = int(Nbi/100), interval = 50, repeat = True)
 ##
 ###plt.rcParams['animation.ffmpeg_path'] = 'C:\\ffmpeg\\bin\\ffmpeg.exe'
 ###Writer = animation.writers['ffmpeg']
