@@ -10,7 +10,3 @@ Un programme codé en Python pour résoudre l'équation de la chaleur à deux di
   <img src="resources//2D_Heat_Equation.gif"  width="400" />
   <img src="resources//3D_Heat_Equation.gif"  width="400" />
 </p>
-
-### Théorie
-
-*En construction*
