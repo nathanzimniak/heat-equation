@@ -46,7 +46,7 @@ T0[:, :, :1] = Tcl4
 
 
 def finite_difference_method(Z):
-    ''' Calcule la fonction d'onde pour chaque itération temporelle
+    ''' Calcule la température pour chaque itération temporelle
         ----------
         :param Z: 3D array, tableau des solutions vide
         :return: Z, tableau des solutions
